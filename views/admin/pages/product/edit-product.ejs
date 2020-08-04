@@ -1,0 +1,49 @@
+<div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Edit Product</h4>
+                            </div>
+                            <div class="content">
+                                <div class="payment-list">
+                                    <form action="/admin/edit-product" enctype="multipart/form-data" method="POST">
+                                        <ul>
+                                           
+                                            <li>
+                                                <label>Product Category</label>
+                                                <input class="form-control" type="text" id="productCategory" name="productCategory" value="<%=result[0]['product_category']%>" placeholder="Type Product Cateogory">
+                                            </li>
+                                            <li>
+                                                <label>Product Name</label>
+                                                <input class="form-control" type="text" id="productName" name="productName" value="<%=result[0]['product_name']%>" placeholder="Type Product Name">
+                                            </li>
+
+                                            <li>
+                                                <label>Location</label>
+                                                <input class="form-control" type="text" id="productLocation" name="productLocation" value="<%=result[0]['product_location']%>" placeholder="Type Location">
+                                            </li>
+                                            
+                                            <input type="hidden" name="id" value="<%=result[0]['id']%>">
+                                          
+                                            <li>
+                                                <label>Select Hotel image</label>
+                                                <input class="form-control" type="file" id="file" name="file">
+                                            </li>
+                                            
+                                                <li class="full"><label>Description</label><textarea name="productDescription" class="ckeditor" id="productDescription" name="productDescription" cols="30" rows="10" value=""><%=result[0]['product_description']%></textarea></li>
+                                          
+                                            <li class="full"><input type="submit" value="Update"> </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>

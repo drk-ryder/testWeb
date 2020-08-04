@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Colorado Campgrounds | Blogs List</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Bootstrap core CSS     -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.min.css">
+
+    <!-- Animation library for notifications   -->
+    <link href="css/animate.min.css" rel="stylesheet"/>
+
+    <link href="css/toastr.min.css" rel="stylesheet"/>
+    <link href="css/summernote.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+
+    <link href="style.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+  </head>
+  <body class="user">
+	
+    <div class="wrapper">
+    <div class="sidebar" data-color="purple" data-image="img/sidebar-5.jpg">
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="index.html" target="_blank" class="simple-text"><img src="img/logo.png" alt=""></a>
+            </div>
+
+           <ul class="nav">
+               <li><a href="index.html"><i class="pe-7s-menu"></i><p>Dashboard</p></a></li>
+               <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>Campgrounds</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="add-parent-campground.html"><p>Add Parent Campground</p></a></li>
+                       <li><a href="parent-campground-list.html"><p>Parent Campground List</p></a></li>
+                       <li><a href="add-child-campground.html"><p>Add Child Campground</p></a></li>
+                       <li><a href="child-campground-list.html"><p>Child Campgrounds List</p></a></li>
+                       <li><a href="add-site-description.html"><p>Add Site Description</p></a></li>
+                       <li><a href="site-description-detail-list.html"><p>Site Description Detail List</p></a></li>
+                       <li><a href="site-parameters.html"><p>Site Parameters</p></a></li>
+                   </ul>
+               </li>
+                <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>Informational Pages</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="add-informational-page.html"><p>Add Informational Page</p></a></li>
+                       <li><a href="informational-pages.html"><p>Informational Pages List</p></a></li>
+                       <li><a href="add-homepage-content.html"><p>Add Homepage Content</p></a></li>
+                       <li><a href="add-aboutus-content.html"><p>Add About Us Content</p></a></li>
+                   </ul>
+                </li>
+                <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>Subscriber</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="subscriber-payments.html"><p>Subscriber Payments</p></a></li>
+                       <li><a href="subscriber-list.html"><p>Subscriber List</p></a></li>
+                       <li><a href="outbound-email.html"><p>Outbound Email</p></a></li>
+                   </ul>
+                </li>
+               <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>SEO Information</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="add-seo-info-for-region.html"><p>Add SEO info for Region</p></a></li>
+                       <li><a href="seo-info-for-region.html"><p>SEO info for Region</p></a></li>
+                       <li><a href="add-seo-info-for-homepage.html"><p>Add SEO info for Homepage</p></a></li>
+                       <li><a href="seo-info-for-homepage.html"><p>SEO info for Homepage</p></a></li>
+                   </ul>
+               </li>
+               <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>Blogs</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="add-blog.html"><p>Add New Blog</p></a></li>
+                       <li><a href="blogs-list.html"><p>Blogs List</p></a></li>
+                   </ul>
+               </li>
+               <li><a href="add-disclaimer.html"><i class="pe-7s-menu"></i><p>Add Disclaimer</p></a></li>
+               <li><a href="annual-subscription.html"><i class="pe-7s-menu"></i><p>Annual Subscription</p></a></li>
+           </ul>
+    	</div>
+    </div>
+
+        <!--// Header \\-->
+        <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Admin</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="btn btn-info btn-fill pull-right color-red" style="margin: 12px 3px 0;">
+                                <p>Log out</p>
+                            </a>
+                        </li>
+						<li class="separator hidden-lg hidden-md"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--// Header \\-->
+
+        <!--// Subheader \\-->
+        <div class="ccg-subheader">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Blogs List</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Subheader \\-->
+
+        <!--// Main Content \\-->
+		<div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Blogs List</h4>
+                            </div>
+                            <div class="content">
+                                <div class="payment-list">
+                                    <table>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Date</th>
+                                            <th>Blog Title</th>
+                                            <th>Slug</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>25/05/2019</td>
+                                            <td>Thailand Special Places</td>
+                                            <td>thailand-special-places</td>
+                                            <td><a href="blog-details.html" class="fa fa-eye" data-toggle="tooltip" title="View Detail"></a>
+                                                <a href="edit-blog.html" class="fa fa-pencil-square-o" data-toggle="tooltip" title="Eidt"></a>
+                                                <a href="" class="fa fa-trash" data-toggle="tooltip" title="Delete"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+		<!--// Main Content \\-->
+
+        <!--// Footer \\-->
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <a href="#" target="_blank" style="float: left; width: 230px;"><img src="img/logo.png" alt=""></a>
+                </nav>
+                <p class="copyright pull-right">
+                    © 2019 All Right Reserved.
+                </p>
+            </div>
+        </footer>
+        <!--// Footer \\-->
+
+	</div>
+	<div class="clearfix"></div>
+    </div>
+    <!--// Main Wrapper \\-->
+
+	<!--   Core JS Files   -->
+    <script src="js/jquery.3.2.1.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.min.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="js/bootstrap-notify.js"></script>
+
+    <script src="js/toster.js"></script>
+    <script src="js/summernote-updated.min.js"></script>
+    <script src="js/summernote-active.js"></script>
+
+    
+	<script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <!-- editor -->
+
+<!-- /editor -->
+  </body>
+</html>

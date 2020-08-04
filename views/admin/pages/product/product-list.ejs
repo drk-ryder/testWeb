@@ -1,0 +1,56 @@
+	<div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Category List</h4>
+                            </div>
+                            <div class="content">
+                                <div class="payment-list">
+                                    <table>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Year</th>
+                                            <th>Product Name</th>
+                                            <th>Category</th>
+                                            <th>Location</th>
+                                            <th>Description</th>
+                                            <th>Image</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        <% 
+                                            if(userData.length!=0){
+                                                var i=1;
+                                                userData.forEach(function(data){
+                                        %>
+                                        <tr>
+                                            <td><%=i;%></td>
+                                            <td><%=data.created_at %></td>
+                                            <td><%=data.product_name %></td>
+                                            <td><%=data.product_category %></td>
+                                            <td><%=data.product_location %></td>
+                                            <td><%=data.product_description %></td>
+                                            <td><img style="width:50px" src="/public/assets/img/<%=data.product_image %>"></td>
+                                            <td>
+                                                <a href="/admin/edit-product/<%=data.id%>" class="fa fa-pencil-square-o" data-toggle="tooltip" title="Edit"></a>
+                                                <a href="/admin/delete-product/<%=data.id%>" class="fa fa-trash" data-toggle="tooltip" title="Delete"></a>
+                                            </td>
+                                        </tr>
+                                        <%  i++; }) %>
+                                                <% }else{ %>
+                                        <tr>
+                                            <td colspan="7">No Data Found</td>
+                                        </tr>
+                                            <% } %>
+                                    </table>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
