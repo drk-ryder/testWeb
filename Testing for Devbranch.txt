@@ -1,5 +1,7 @@
-<<<<<<< HEAD
+
 Sohail Ishaque
-=======
+
 master
 >>>>>>> master
+
+devTesting
