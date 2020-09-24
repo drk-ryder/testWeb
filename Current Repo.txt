@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 
 DevTesting
 
 Master
 This is a test
 
+=======
+DevTesting
+This is a test
+>>>>>>> devTesting

@@ -5,3 +5,6 @@ master
 >>>>>>> master
 
 devTesting
+=======
+devTesting
+>>>>>>> Stashed changes
